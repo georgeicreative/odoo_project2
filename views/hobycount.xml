@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="view_hobycount_form" model="ir.ui.view">
+        <field name="name">web.hobycountform</field>
+        <field name="model">web.hobycount</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="hobyname_id"/>
+                <field name="hobycount"/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_hobycount_tree" model="ir.ui.view">
+        <field name="name">web.hobycounttree</field>
+        <field name="model">web.hobycount</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="hobyname_id"/>
+                <field name="hobycount"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_web_hobycount" model="ir.actions.act_window">
+        <field name="name">hobycount</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">web.hobycount</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_hobycount"
+              name="hobycount"
+              parent="menu_webschool2_hobbycount"
+              action="action_web_hobycount"
+              sequence="10"/>
+
+</odoo>

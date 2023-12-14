@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem id="menu_webschool2_root" name="webschool2"/>
+    <menuitem id="menu_webschool2_student" parent="menu_webschool2_root"  name="studentlist2"/>
+    <menuitem id="menu_webschool2_hobby" parent="menu_webschool2_root" name="hobbyx2"/>
+    <menuitem id="menu_webschool2_hobbycount" parent="menu_webschool2_root" name="hobbycount"/>
+
+</odoo>
